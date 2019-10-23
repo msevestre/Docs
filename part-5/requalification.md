@@ -1,13 +1,18 @@
-# (Re-)Qualification framework: Introduction
+# (Re-)Qualification framework
 
-A technical framework to assess the confidence of specific intended use of the OSP platform allows for an automatic (re)-qualification workflow of the OSP suite, comprising the following steps:
+## Introduction
+
+The qualification framework enables an automated validation of various scenario (use-cases) supported by the OSP platform. This technical framework is used, for example, to release, in full confidence, a new version of the OSP Suite by verifying automatically that an ever-growing list of scenario is performing as expected.
+
+A qualification scenario is devided into the followins steps:
 -	PBPK model development and verification with observed data
 -	Qualification plan generation
 -	Qualification report generation
 
 ![Overview](../assets/images/part-5/QualificationWorkflowOverview.png)
 
-In a first step, the respective qualification scenario is saved in a special qualification repository on GitHub. This qualification scenario repository contains a detailed qualification plan that links and combines respective models and data to address the use case that shall be qualified. Therefore, the qualification plan consists of: 
+In a first step, the qualification scenario is saved to a dedicated qualification repository on GitHub. This repository contains a detailed qualification plan that links and combines respective models and data describing the use case to qualify. 
+The qualification plan consists of: 
 -	PK-Sim project files (more precisely: PK-Sim project file [**snapshots**](https://docs.open-systems-pharmacology.org/working-with-pk-sim/pk-sim-documentation/importing-exporting-project-data-models#exporting-project-to-snapshot-loading-project-from-snapshot))
 -	Description of potential cross-dependencies between PK-Sim project files (if adequate) (e.g. it is possible to inherit building blocks or simulation parameters)
 -	Observed data sets (needed for model development and verification)
